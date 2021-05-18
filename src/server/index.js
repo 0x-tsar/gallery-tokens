@@ -2,7 +2,8 @@ const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 
-
+// to start
+// npx nodemon index.js
 
 const app = express();
 const router = express.Router();
@@ -17,11 +18,6 @@ app.get('/', async (req, res)=>{
 
 app.get('/posts', async (req,res)=>{
     return res.json({message:'hello from posts'})
-    // res.send('aeeeeee')
-    // res.send('hello from server!');
-    // res.json({
-    //     message:'hello there!!!'
-    // })
 })
 
 // router.get('/posts', (req, res)=>{
