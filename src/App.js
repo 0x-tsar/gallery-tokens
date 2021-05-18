@@ -36,7 +36,9 @@ const action = () =>{
 // });
 
 
-  axios.get('http://localhost:3008/posts').then((res)=>{
+  // axios.get('http://localhost:3008/posts')
+  axios.get('https://server-10.herokuapp.com/posts').then((res)=>{
+    // console.log(res.data);
     console.log(res.data.message);
   })
 
@@ -83,7 +85,6 @@ function App() {
               <h5 className="card-title">Card title</h5>
               <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               <a href="#" className="btn btn-primary" onClick={()=>{
-                console.log('working..');
                 action();
                 // console.log('ok2')
                 //   window.location = '/';
